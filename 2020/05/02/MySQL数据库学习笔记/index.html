@@ -11,7 +11,7 @@
   
   <title>
     
-      归档 
+      MySQL数据库（一） 
       
       
       |
@@ -101,48 +101,122 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2021</span>
-          </h2>
-        </div>
-      
-      <div class="post-item" title="Hello World">
-        <div class="time-m-d">10-27</div>
-        <div class="title">
-          <a href="/2021/10/27/hello-world/">
-            <span>Hello World</span>
-          </a>
-        </div>
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">MySQL数据库（一）</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="更新时间"></i>
+          2020-05-02 10:14:55
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="标签"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/MySQL/" title="MySQL">
+                    <b>#</b> MySQL
+                  </a>
+                </span>
+                
+              </span>
+          
       </div>
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2020</span>
-          </h2>
+      <div class="markdown-body">
+        <blockquote>
+<p>数据库是Web开发中必不可少的一环，需要加强基础知识的学习和总结项目中出现的问题，主要在索引和分布式事务上需要加强学习</p>
+</blockquote>
+<h4 id="数据库底层原理"><a href="#数据库底层原理" class="headerlink" title="数据库底层原理"></a>数据库底层原理</h4><h6 id="数据存储方式"><a href="#数据存储方式" class="headerlink" title="数据存储方式"></a>数据存储方式</h6><h6 id="运行原理"><a href="#运行原理" class="headerlink" title="运行原理"></a>运行原理</h6><h6 id="数据库性能测试"><a href="#数据库性能测试" class="headerlink" title="数据库性能测试"></a>数据库性能测试</h6><h4 id="数据库优化方式"><a href="#数据库优化方式" class="headerlink" title="数据库优化方式"></a>数据库优化方式</h4><h6 id="数据库存储优化"><a href="#数据库存储优化" class="headerlink" title="数据库存储优化"></a>数据库存储优化</h6><h6 id="数据库查询优化"><a href="#数据库查询优化" class="headerlink" title="数据库查询优化"></a>数据库查询优化</h6><h4 id="数据库锁和分布式事务"><a href="#数据库锁和分布式事务" class="headerlink" title="数据库锁和分布式事务"></a>数据库锁和分布式事务</h4><h6 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h6><h6 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h6><h4 id="分库分表"><a href="#分库分表" class="headerlink" title="分库分表"></a>分库分表</h4><h6 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h6><h6 id="细节问题"><a href="#细节问题" class="headerlink" title="细节问题"></a>细节问题</h6><h4 id="高可用"><a href="#高可用" class="headerlink" title="高可用"></a>高可用</h4><h6 id="读写分离"><a href="#读写分离" class="headerlink" title="读写分离"></a>读写分离</h6><h4 id="部署过程中常见问题点"><a href="#部署过程中常见问题点" class="headerlink" title="部署过程中常见问题点"></a>部署过程中常见问题点</h4><h6 id="Docker部署相关常见问题点"><a href="#Docker部署相关常见问题点" class="headerlink" title="Docker部署相关常见问题点"></a>Docker部署相关常见问题点</h6><h6 id="数据库连接池"><a href="#数据库连接池" class="headerlink" title="数据库连接池"></a>数据库连接池</h6>
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="更新时间"></i>
+              2020-05-02 10:14:55
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="标签"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/MySQL/" title="MySQL">
+                        <b>#</b> MySQL
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2021/10/27/hello-world/" target="_self">
+                <span>下一页</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
         </div>
       
-      <div class="post-item" title="MySQL数据库（一）">
-        <div class="time-m-d">05-02</div>
-        <div class="title">
-          <a href="/2020/05/02/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-            <span>MySQL数据库（一）</span>
-          </a>
-        </div>
+    </div>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86"><span class="toc-text">数据库底层原理</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F"><span class="toc-text">数据存储方式</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86"><span class="toc-text">运行原理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95"><span class="toc-text">数据库性能测试</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BC%98%E5%8C%96%E6%96%B9%E5%BC%8F"><span class="toc-text">数据库优化方式</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%98%E5%82%A8%E4%BC%98%E5%8C%96"><span class="toc-text">数据库存储优化</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96"><span class="toc-text">数据库查询优化</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1"><span class="toc-text">数据库锁和分布式事务</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E9%94%81"><span class="toc-text">锁</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-text">事务</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8"><span class="toc-text">分库分表</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-text">实现方式</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%BB%86%E8%8A%82%E9%97%AE%E9%A2%98"><span class="toc-text">细节问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%AB%98%E5%8F%AF%E7%94%A8"><span class="toc-text">高可用</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB"><span class="toc-text">读写分离</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E7%82%B9"><span class="toc-text">部署过程中常见问题点</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#Docker%E9%83%A8%E7%BD%B2%E7%9B%B8%E5%85%B3%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E7%82%B9"><span class="toc-text">Docker部署相关常见问题点</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0"><span class="toc-text">数据库连接池</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         <div class="footer">
   <div class="social">
@@ -405,6 +479,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%88%E4%B8%80%EF%BC%89 + '&url=' + http%3A%2F%2Fexample.com%2F2020%2F05%2F02%2FMySQL%25E6%2595%25B0%25E6%258D%25AE%25E5%25BA%2593%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AC%2594%25E8%25AE%25B0%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2020/05/02/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
