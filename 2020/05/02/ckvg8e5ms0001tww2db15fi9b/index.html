@@ -200,21 +200,31 @@ MathJax = {
 <p>join优化：<br>减少join中的条件数据，减少多次连接，按照机器性能新增join buffer大小</p>
 <h4 id="数据库存储优化"><a href="#数据库存储优化" class="headerlink" title="数据库存储优化"></a>数据库存储优化</h4><p>能用小字段尽量用小字段，varchar是变长的，随着字段存储内容的变多会变长。</p>
 <h2 id="数据库锁和分布式事务"><a href="#数据库锁和分布式事务" class="headerlink" title="数据库锁和分布式事务"></a>数据库锁和分布式事务</h2><h4 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h4><p>数据库锁一般是读写锁，读锁后只能加读锁，不能加写锁。加了写锁后其他任何读锁、写锁都无法加入；</p>
-<p>innoDB：有行锁和表锁，有索引则触发行锁，没有则是表锁；<br>MyISAM：只有表锁；</p>
-<h4 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h4><p>ACID<br>原子性：<br>一致性：<br>持久性：<br>隔离性</p>
+<p>InnoDB：有行锁和表锁，有索引则触发行锁，没有则是表锁；<br>MyISAM：只有表锁；</p>
+<h4 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h4><p>事物的四大特征ACID，在InnoDB中：</p>
+<p>原子性（Atomicity）：使用undo log来实现。</p>
+<p>一致性（Consistency）：使用A、I、D配合实现。</p>
+<p>隔离性（Isolation）：使用数据库中的锁来实现。</p>
+<p>持久性（Durability）：使用redo log来实现。</p>
 <ul>
 <li><input disabled="" type="checkbox"> 分布式事务（待完成）</li>
 </ul>
 <h2 id="分库分表"><a href="#分库分表" class="headerlink" title="分库分表"></a>分库分表</h2><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><p>分而治之，将大规模的数据按照某种规律进行划分，垂直分表应该在设计表的时候根据业务都划分完毕，所以架构中需要处理的分表主要为水平分表</p>
 <h4 id="相关实现"><a href="#相关实现" class="headerlink" title="相关实现"></a>相关实现</h4><p>mysql分区表语法 PARTITION BY RANGE，建议分区列为可阶段性拆分列，例如时间，年龄，类别之类，使用sharding jdbc进行分库分表</p>
-<h2 id="高可用"><a href="#高可用" class="headerlink" title="高可用"></a>高可用</h2><h4 id="读写分离"><a href="#读写分离" class="headerlink" title="读写分离"></a>读写分离</h4><h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><h4 id="操作系统相关知识"><a href="#操作系统相关知识" class="headerlink" title="操作系统相关知识"></a>操作系统相关知识</h4><ul>
+<h2 id="高可用"><a href="#高可用" class="headerlink" title="高可用"></a>高可用</h2><h4 id="读写分离"><a href="#读写分离" class="headerlink" title="读写分离"></a>读写分离</h4><ul>
+<li><input disabled="" type="checkbox"> 待完成</li>
+</ul>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><h4 id="操作系统相关知识"><a href="#操作系统相关知识" class="headerlink" title="操作系统相关知识"></a>操作系统相关知识</h4><ul>
 <li><input disabled="" type="checkbox"> 待完成</li>
 </ul>
 <h4 id="Docker部署相关常见问题点"><a href="#Docker部署相关常见问题点" class="headerlink" title="Docker部署相关常见问题点"></a>Docker部署相关常见问题点</h4><ol>
 <li>时区需要调整到上海</li>
 <li>默认开启了大小写校验，可按需更改</li>
 </ol>
-<h4 id="数据库连接池"><a href="#数据库连接池" class="headerlink" title="数据库连接池"></a>数据库连接池</h4><p>参考文献：<br><a target="_blank" rel="noopener" href="https://tech.meituan.com/2014/06/30/mysql-index.html">《MySQL索引原理及慢查询优化》</a>- 美团技术团队</p>
+<h4 id="数据库连接池"><a href="#数据库连接池" class="headerlink" title="数据库连接池"></a>数据库连接池</h4><ul>
+<li><input disabled="" type="checkbox"> 待完成</li>
+</ul>
+<p>参考文献：<br><a target="_blank" rel="noopener" href="https://tech.meituan.com/2014/06/30/mysql-index.html">《MySQL索引原理及慢查询优化》</a>- 美团技术团队</p>
 
       </div>
       
@@ -555,12 +565,12 @@ MathJax = {
       </a>
       <div class="share-content hidden">
         
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%89%96%E6%9E%90%E5%92%8C%E4%BC%98%E5%8C%96 + '&url=' + http%3A%2F%2Fexample.com%2F2020%2F05%2F02%2Fckvg4wfuq0001ngw22xsi0i22%2F + '" target="_blank" title="Twitter">
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E5%89%96%E6%9E%90%E5%92%8C%E4%BC%98%E5%8C%96 + '&url=' + http%3A%2F%2Fexample.com%2F2020%2F05%2F02%2Fckvg8e5ms0001tww2db15fi9b%2F + '" target="_blank" title="Twitter">
             <i class="iconfont icon-twitter"></i>
           </a>
         
         
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2020/05/02/ckvg4wfuq0001ngw22xsi0i22/" target="_blank" title="Facebook">
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2020/05/02/ckvg8e5ms0001tww2db15fi9b/" target="_blank" title="Facebook">
             <i class="iconfont icon-facebooksquare"></i>
           </a>
         
