@@ -5,8 +5,8 @@
     
     <entry>
       <title>个人技能网-待补充掌握程度</title>
-      <link href="/2021/10/01/10/"/>
-      <url>/2021/10/01/10/</url>
+      <link href="/2021/10/01/1/"/>
+      <url>/2021/10/01/1/</url>
       
         <content type="html"><![CDATA[<blockquote><p>上次听课时一位讲师说在个人成长过程中要不断地自己绘制自己的技能网，知识和知识之间是有联系的，做成图之后可以更好的梳理知识之间的共同点，并且以便以后复习自己所掌握的知识，笔者深以为然，所以今天也绘制了自己的技能网。</p></blockquote><h4 id="精通（待完善）"><a href="#精通（待完善）" class="headerlink" title="精通（待完善）"></a>精通（待完善）</h4><h4 id="熟练（待完善）"><a href="#熟练（待完善）" class="headerlink" title="熟练（待完善）"></a>熟练（待完善）</h4><h4 id="生疏（待完善）"><a href="#生疏（待完善）" class="headerlink" title="生疏（待完善）"></a>生疏（待完善）</h4><h4 id="了解（待完善）"><a href="#了解（待完善）" class="headerlink" title="了解（待完善）"></a>了解（待完善）</h4><h4 id="耳闻（待完善）"><a href="#耳闻（待完善）" class="headerlink" title="耳闻（待完善）"></a>耳闻（待完善）</h4><p><img src="https://pic.imgdb.cn/item/617a14f52ab3f51d91a38617.png" alt="个人技能网"></p>]]></content>
       
@@ -24,10 +24,10 @@
     
     <entry>
       <title>Netty应用以及源码（一）</title>
-      <link href="/2021/01/02/2/"/>
-      <url>/2021/01/02/2/</url>
+      <link href="/2021/01/02/1/"/>
+      <url>/2021/01/02/1/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>Netty高性能网络编程框架，主要优点有NIO、零拷贝</p></blockquote><h2 id="NIO"><a href="#NIO" class="headerlink" title="NIO"></a>NIO</h2>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>Netty是基于事件处理的高性能异步非阻塞网络框架，Zookeeper、Dubbo、RocketMQ底层都有Netty的影子</p></blockquote><h2 id="NIO"><a href="#NIO" class="headerlink" title="NIO"></a>NIO</h2><h4 id="运行状态和异步同步"><a href="#运行状态和异步同步" class="headerlink" title="运行状态和异步同步"></a>运行状态和异步同步</h4><p>泡茶例子：</p><ul><li>同步：自己来烧水，自己来泡茶；</li><li>异步：自己烧水，然后走了换另一个人来泡茶；</li><li>阻塞：自己来烧水，自己需要站在原地等水烧开；</li><li>非阻塞：自己来烧水，自己可以在烧水途中做其他的事情；</li></ul>]]></content>
       
       
       
