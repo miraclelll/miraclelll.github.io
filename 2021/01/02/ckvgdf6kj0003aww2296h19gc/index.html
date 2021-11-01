@@ -11,7 +11,7 @@
   
   <title>
     
-      archive_a: 2020 
+      Netty应用以及源码（一） 
       
       
       |
@@ -101,57 +101,151 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2021</span>
-          </h2>
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Netty应用以及源码（一）</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="更新时间"></i>
+          2021-01-02 14:13:46
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="标签"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/%E5%90%8E%E7%AB%AF/" title="后端">
+                    <b>#</b> 后端
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/Netty/" title="Netty">
+                    <b>#</b> Netty
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/%E6%BA%90%E7%A0%81/" title="源码">
+                    <b>#</b> 源码
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <blockquote>
+<p>Netty高性能网络编程框架，主要优点有NIO、零拷贝</p>
+</blockquote>
+<h2 id="NIO"><a href="#NIO" class="headerlink" title="NIO"></a>NIO</h2>
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2020/05/02/ckvgdf6kg0001aww23s2lcqf0/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="更新时间"></i>
+              2021-01-02 14:13:46
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="标签"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/%E5%90%8E%E7%AB%AF/" title="后端">
+                        <b>#</b> 后端
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/Netty/" title="Netty">
+                        <b>#</b> Netty
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/%E6%BA%90%E7%A0%81/" title="源码">
+                        <b>#</b> 源码
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2021/10/01/10/" target="_self">
+                <span>下一页</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
         </div>
       
-      <div class="post-item" title="个人技能网-待补充掌握程度">
-        <div class="time-m-d">10-01</div>
-        <div class="title">
-          <a href="/2021/10/01/10/">
-            <span>个人技能网-待补充掌握程度</span>
-          </a>
-        </div>
-      </div>
+    </div>
     
-      <div class="post-item" title="Netty应用以及源码（一）">
-        <div class="time-m-d">01-02</div>
-        <div class="title">
-          <a href="/2021/01/02/ckvgdf6kj0003aww2296h19gc/">
-            <span>Netty应用以及源码（一）</span>
-          </a>
-        </div>
-      </div>
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#NIO"><span class="toc-text">NIO</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
     
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2020</span>
-          </h2>
-        </div>
-      
-      <div class="post-item" title="MySQL数据库原理剖析和优化">
-        <div class="time-m-d">05-02</div>
-        <div class="title">
-          <a href="/2020/05/02/ckvgdf6kg0001aww23s2lcqf0/">
-            <span>MySQL数据库原理剖析和优化</span>
-          </a>
-        </div>
+      <div class="comments-container">
+        
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         <div class="footer">
   <div class="social">
@@ -414,6 +508,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Netty%E5%BA%94%E7%94%A8%E4%BB%A5%E5%8F%8A%E6%BA%90%E7%A0%81%EF%BC%88%E4%B8%80%EF%BC%89 + '&url=' + http%3A%2F%2Fexample.com%2F2021%2F01%2F02%2Fckvgdf6kj0003aww2296h19gc%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2021/01/02/ckvgdf6kj0003aww2296h19gc/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
