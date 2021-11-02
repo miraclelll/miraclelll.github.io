@@ -11,7 +11,7 @@
   
   <title>
     
-      编写Linux中frp自启动脚本 
+      编写Linux中frp自启动脚本（待完善 ⏳） 
       
       
       |
@@ -129,11 +129,11 @@ MathJax = {
   <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
   <div class="container post-details" id="post-details">
     <div class="post-content">
-      <div class="post-title">编写Linux中frp自启动脚本</div>
+      <div class="post-title">编写Linux中frp自启动脚本（待完善 ⏳）</div>
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime" title="更新时间"></i>
-          2021-10-31 17:54:16
+          2021-12-01 17:54:16
         </span>
         
               <span class="post-tags">
@@ -156,7 +156,7 @@ MathJax = {
       </div>
       <div class="markdown-body">
         <blockquote>
-<p>家里有台闲置树莓派和轻量云的服务器顺手折腾一下</p>
+<p>家里有台闲置树莓派和轻量云的服务器顺手折腾一下，部分情况frp会失效，猜测原因在于云服务备案导致（待完善 ⏳<br>）</p>
 </blockquote>
 <p>设置服务名</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /lib/systemd/system/frps.service</span><br></pre></td></tr></table></figure>
@@ -176,6 +176,9 @@ MathJax = {
 <p>生成的软连接所在位置，一般在需要删除该自启动脚本时同时删除</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/etc/systemd/system/multi-user.target.wants/frps.service</span><br><span class="line"></span><br><span class="line">/usr/lib/systemd/system/frps.service</span><br></pre></td></tr></table></figure>
 
+<p>相关文献</p>
+<p><a target="_blank" rel="noopener" href="https://gofrp.org/docs/setup/">《安装frp》</a>- frp官方文档</p>
+
       </div>
       
         <div class="prev-or-next">
@@ -190,7 +193,7 @@ MathJax = {
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime" title="更新时间"></i>
-              2021-10-31 17:54:16
+              2021-12-01 17:54:16
             </span>
             
                   <span class="post-tags">
@@ -494,12 +497,12 @@ MathJax = {
       </a>
       <div class="share-content hidden">
         
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E7%BC%96%E5%86%99Linux%E4%B8%ADfrp%E8%87%AA%E5%90%AF%E5%8A%A8%E8%84%9A%E6%9C%AC + '&url=' + http%3A%2F%2Fexample.com%2F2021%2F10%2F31%2F1%2F + '" target="_blank" title="Twitter">
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E7%BC%96%E5%86%99Linux%E4%B8%ADfrp%E8%87%AA%E5%90%AF%E5%8A%A8%E8%84%9A%E6%9C%AC%EF%BC%88%E5%BE%85%E5%AE%8C%E5%96%84%20%E2%8F%B3%EF%BC%89 + '&url=' + http%3A%2F%2Fexample.com%2F2021%2F12%2F01%2F1%2F + '" target="_blank" title="Twitter">
             <i class="iconfont icon-twitter"></i>
           </a>
         
         
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2021/10/31/1/" target="_blank" title="Facebook">
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2021/12/01/1/" target="_blank" title="Facebook">
             <i class="iconfont icon-facebooksquare"></i>
           </a>
         
