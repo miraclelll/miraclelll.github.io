@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>编写Linux中frp自启动脚本（待完善⏳）</title>
+      <title>编写Linux中frp自启动脚本</title>
       <link href="/2021/12/01/1/"/>
       <url>/2021/12/01/1/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>家里有台闲置树莓派和轻量云的服务器顺手折腾一下，部分情况frp会失效，猜测原因在于云服务备案导致（待完善⏳）</p></blockquote><p>设置服务名</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /lib/systemd/system/frps.service</span><br></pre></td></tr></table></figure><p>写入下列代码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=frps service</span><br><span class="line">#前置服务</span><br><span class="line">After=network.target syslog.target</span><br><span class="line">#后置服务</span><br><span class="line">Wants=network.target</span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">Restart=always #当程序退出时，自动重启。</span><br><span class="line">#可以使用非root用户启动，此处我没有设置用户组则注释调</span><br><span class="line">#User=frp</span><br><span class="line">#Group=frp</span><br><span class="line">#启动服务的命令（此处写你的frps的实际安装目录）</span><br><span class="line">ExecStart=~/frp/frps -c ~/frp/frps.ini</span><br><span class="line">ExecStop=/bin/kill $MAINPID</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure><p>刷新服务</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure><p>服务自启动</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable frps</span><br></pre></td></tr></table></figure><p>重启服务</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart frps</span><br></pre></td></tr></table></figure><p>生成的软连接所在位置，一般在需要删除该自启动脚本时同时删除</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/etc/systemd/system/multi-user.target.wants/frps.service</span><br><span class="line"></span><br><span class="line">/usr/lib/systemd/system/frps.service</span><br></pre></td></tr></table></figure><p>frp部署文档参考 👉 <a href="https://gofrp.org/docs/setup/">《安装frp》</a>- frp官方文档</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>家里有台闲置树莓派和轻量云的服务器顺手折腾一下</p></blockquote><p>设置服务名</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /lib/systemd/system/frps.service</span><br></pre></td></tr></table></figure><p>写入下列代码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=frps service</span><br><span class="line">#前置服务</span><br><span class="line">After=network.target syslog.target</span><br><span class="line">#后置服务</span><br><span class="line">Wants=network.target</span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">Restart=always #当程序退出时，自动重启。</span><br><span class="line">#可以使用非root用户启动，此处我没有设置用户组则注释调</span><br><span class="line">#User=frp</span><br><span class="line">#Group=frp</span><br><span class="line">#启动服务的命令（此处写你的frps的实际安装目录）</span><br><span class="line">ExecStart=~/frp/frps -c ~/frp/frps.ini</span><br><span class="line">ExecStop=/bin/kill $MAINPID</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure><p>刷新服务</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure><p>服务自启动</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable frps</span><br></pre></td></tr></table></figure><p>重启服务</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart frps</span><br></pre></td></tr></table></figure><p>生成的软连接所在位置，一般在需要删除该自启动脚本时同时删除</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/etc/systemd/system/multi-user.target.wants/frps.service</span><br><span class="line"></span><br><span class="line">/usr/lib/systemd/system/frps.service</span><br></pre></td></tr></table></figure><p>frp部署文档参考 👉 <a href="https://gofrp.org/docs/setup/">《安装frp》</a>- frp官方文档</p>]]></content>
       
       
       
@@ -54,9 +54,9 @@
       
         <tags>
             
-            <tag> Netty </tag>
-            
             <tag> 后端 </tag>
+            
+            <tag> Netty </tag>
             
             <tag> 源码 </tag>
             
@@ -77,9 +77,9 @@
       
         <tags>
             
-            <tag> 后端 </tag>
-            
             <tag> MySQL </tag>
+            
+            <tag> 后端 </tag>
             
         </tags>
       
