@@ -234,6 +234,24 @@ MathJax = {
 <p> CP：服务和服务之间保证了高强度的一致性，如果有服务死亡则通过投票或选举等措施等待数据同步，服务会有部分时间不可用；</p>
 <p> AP：服务和服务之间为了保证可以对外提供访问则会，不关注多台服务上的数据是否同步的情况；</p>
 </li>
+<li><p>XA规范：</p>
+<ul>
+<li>AP：appliaction 应用程序</li>
+<li>TM：truncation manager 事务管理器</li>
+<li>RM：resource manager 资源管理器</li>
+<li>CRM：communication resource manager 通讯资源管理器</li>
+</ul>
+</li>
+<li><p>解决方案</p>
+<ul>
+<li>2PC方案</li>
+<li>3PC方案</li>
+<li>TCC方案</li>
+<li>本地消息表方案</li>
+<li>最终一致性方案</li>
+<li>最大努力通知方案</li>
+</ul>
+</li>
 </ol>
 <h2 id="分库分表"><a href="#分库分表" class="headerlink" title="分库分表"></a>分库分表</h2><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><blockquote>
 <p>分而治之，将大规模的数据按照某种规律进行划分，垂直分表应该在设计表的时候根据业务都划分完毕，所以架构中需要处理的分表主要为水平分表</p>
