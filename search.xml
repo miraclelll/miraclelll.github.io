@@ -14,7 +14,13 @@
       
         <tags>
             
-            <tag> 微服务、zookeeper、分布式事务、seata </tag>
+            <tag> 微服务 </tag>
+            
+            <tag> zookeeper </tag>
+            
+            <tag> 分布式事务 </tag>
+            
+            <tag> seata </tag>
             
         </tags>
       
