@@ -13,8 +13,8 @@
   
   <title>
     
-      Netty应用以及源码（一）
-      
+      标签
+       : SkyWalking
       
       |
     
@@ -103,164 +103,30 @@
 
 
       <div class="flex-container">
-        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
-<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+        <!-- 标签详情页，展示某个标签下的文章列表，url形式：https://yoursite/tags/某个标签/ -->
 
-<!-- LaTex Display -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
-
-
-
+<div class="container tag-details">
+  <div class="content-title">
+    <h2>
+      <span>SkyWalking</span>
+    </h2>
+  </div>
   
-
-  
-
-  
-
-  
-  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
-  <div class="container post-details" id="post-details">
-    <div class="post-content">
-      <div class="post-title">Netty应用以及源码（一）</div>
-      <div class="post-attach">
-        <span class="post-pubtime">
-          <i class="iconfont icon-updatetime" title="更新时间"></i>
-          2021-01-02 14:13:46
-        </span>
-        
-              <span class="post-tags">
-                <i class="iconfont icon-tags" title="标签"></i>
-                
-                <span class="span--tag">
-                  <a href="/tags/%E5%90%8E%E7%AB%AF/" title="后端">
-                    <b>#</b> 后端
-                  </a>
-                </span>
-                
-                <span class="span--tag">
-                  <a href="/tags/Netty/" title="Netty">
-                    <b>#</b> Netty
-                  </a>
-                </span>
-                
-                <span class="span--tag">
-                  <a href="/tags/%E6%BA%90%E7%A0%81/" title="源码">
-                    <b>#</b> 源码
-                  </a>
-                </span>
-                
-              </span>
-          
+    <div class="post-list">
+      <div class="post-item" title="微服务链路追踪SkyWalking">
+        <span class="time-m-d">2021-05-02</span>
+        <a href="/2021/05/02/1/">
+          <span>微服务链路追踪SkyWalking</span>
+        </a>
       </div>
-      <div class="markdown-body">
-        <blockquote>
-<p>Netty是基于事件处理的高性能异步非阻塞网络框架，Zookeeper、Dubbo、RocketMQ底层都有Netty的影子，是网络编程的基石，需要熟练掌握</p>
-</blockquote>
-<h2 id="NIO"><a href="#NIO" class="headerlink" title="NIO"></a>NIO</h2><h4 id="运行状态和异步同步"><a href="#运行状态和异步同步" class="headerlink" title="运行状态和异步同步"></a>运行状态和异步同步</h4><p>泡茶例子：</p>
-<ul>
-<li>同步：自己来烧水，自己来泡茶；</li>
-<li>异步：自己烧水，然后走了换另一个人来泡茶；</li>
-<li>阻塞：自己来烧水，自己需要站在原地等水烧开；</li>
-<li>非阻塞：自己来烧水，自己可以在烧水途中做其他的事情；</li>
-</ul>
-<h4 id="网络IO"><a href="#网络IO" class="headerlink" title="网络IO"></a>网络IO</h4><ul>
-<li>BIO：blocking I/O，阻塞性IO，需要当客户端发送请求之前则建立一个阻塞线程，去监听端口，待请求建立连接后继续阻塞，待客户端发送数据后再处理数据，适用于连接数固定且较小的项目中；</li>
-<li>NIO：new I/O，使用单独的线程进行轮询是否有人建立连接，当建立了连接后才会丢给工作线程组，让线程组以块的模式来处理客户端数据，适用于连接数较大且连接时长较短的业务；</li>
-<li>AIO：asynchronous I/O，完全异步的处理内核态的客户端数据，无需关心建立连接的细节，只需要根据系统通知进行事件处理即可，适用于连接数较大且连接时长较长的业务，用于系统调用比较多的场景，例如文件下载；</li>
-</ul>
-<h4 id="Reactor模式"><a href="#Reactor模式" class="headerlink" title="Reactor模式"></a>Reactor模式</h4><p>主要分为reactor和handler，reactor用来处理客户端连接，handler用来负责处理相关请求。</p>
-
-      </div>
-      
-        <div class="prev-or-next">
-          <div class="post-foot-next">
-            
-              <a href="/2020/05/02/1/" target="_self">
-                <i class="iconfont icon-chevronleft"></i>
-                <span>上一页</span>
-              </a>
-            
-          </div>
-          <div class="post-attach">
-            <span class="post-pubtime">
-              <i class="iconfont icon-updatetime" title="更新时间"></i>
-              2021-01-02 14:13:46
-            </span>
-            
-                  <span class="post-tags">
-                    <i class="iconfont icon-tags" title="标签"></i>
-                    
-                    <span class="span--tag">
-                      <a href="/tags/%E5%90%8E%E7%AB%AF/" title="后端">
-                        <b>#</b> 后端
-                      </a>
-                    </span>
-                    
-                    <span class="span--tag">
-                      <a href="/tags/Netty/" title="Netty">
-                        <b>#</b> Netty
-                      </a>
-                    </span>
-                    
-                    <span class="span--tag">
-                      <a href="/tags/%E6%BA%90%E7%A0%81/" title="源码">
-                        <b>#</b> 源码
-                      </a>
-                    </span>
-                    
-                  </span>
-              
-          </div>
-          <div class="post-foot-prev">
-            
-              <a href="/2021/05/02/1/" target="_self">
-                <span>下一页</span>
-                <i class="iconfont icon-chevronright"></i>
-              </a>
-            
-          </div>
-        </div>
-      
     </div>
-    
-  <div id="btn-catalog" class="btn-catalog">
-    <i class="iconfont icon-catalog"></i>
-  </div>
-  <div class="post-catalog hidden" id="catalog">
-    <div class="title">目录</div>
-    <div class="catalog-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#NIO"><span class="toc-text">NIO</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%8A%B6%E6%80%81%E5%92%8C%E5%BC%82%E6%AD%A5%E5%90%8C%E6%AD%A5"><span class="toc-text">运行状态和异步同步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E7%BB%9CIO"><span class="toc-text">网络IO</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Reactor%E6%A8%A1%E5%BC%8F"><span class="toc-text">Reactor模式</span></a></li></ol></li></ol></li></ol>
-    </div>
-  </div>
-
   
-<script src="/js/catalog.js"></script>
-
-
-
-
+  <nav class="post-navigation">
     
-      <div class="comments-container">
-        
-
-
-
-
-
-      </div>
+    <span class="page-num">1 / 1</span>
     
-  </div>
-
+  </nav>
+</div>
 
         <div class="footer">
   <div class="social">
@@ -517,24 +383,6 @@ MathJax = {
 
 
         
-  
-    <div class="share-icon tools-bar-item">
-      <a href="javascript: void(0)" id="share-icon">
-        <i class="iconfont iconshare"></i>
-      </a>
-      <div class="share-content hidden">
-        
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Netty%E5%BA%94%E7%94%A8%E4%BB%A5%E5%8F%8A%E6%BA%90%E7%A0%81%EF%BC%88%E4%B8%80%EF%BC%89 + '&url=' + http%3A%2F%2Fexample.com%2F2021%2F01%2F02%2F1%2F + '" target="_blank" title="Twitter">
-            <i class="iconfont icon-twitter"></i>
-          </a>
-        
-        
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2021/01/02/1/" target="_blank" title="Facebook">
-            <i class="iconfont icon-facebooksquare"></i>
-          </a>
-        
-      </div>
-    </div>
   
   
 <script src="/js/shares.js"></script>

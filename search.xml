@@ -69,6 +69,29 @@
     
     
     <entry>
+      <title>微服务链路追踪SkyWalking</title>
+      <link href="/2021/05/02/1/"/>
+      <url>/2021/05/02/1/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>SkyWalking超级简单的微服务链路追踪框架</p></blockquote><h4 id="1-下载安装包"><a href="#1-下载安装包" class="headerlink" title="1.下载安装包"></a>1.下载安装包</h4><p>SkyWalking<a href="https://skywalking.apache.org/downloads/">下载地址</a>，看了好多博客没一个描述清楚要下载哪个文件的，我自己也搞了半天，就是下图它兄弟俩都要下载，第一个是SkyWalking的服务，第二个是Java的扩展。</p><p><a href="https://imgtu.com/i/7eB7vV"><img src="https://s4.ax1x.com/2022/01/11/7eB7vV.md.png" alt="7eB7vV.md.png"></a></p><h4 id="2-修改启动参数"><a href="#2-修改启动参数" class="headerlink" title="2.修改启动参数"></a>2.修改启动参数</h4><p>首先解压<strong>SkyWalking Java Agent</strong>文件，找到<strong>skywalking-agent.jar</strong>，记下所在位置。然后修改idea中项目的启动配置，点击idea中的Edit Configurations…。点击需要加入链路追踪的服务，将下列参数如图所示分别加入VM options和Environment variables中。需要链路追踪能查看其他服务则按照上面所述依次添加启动参数。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-javaagent:D:\\tools\\skywalking-agent\\skywalking-agent.jar</span><br><span class="line">SW_AGENT_NAME=cloud-auth;SW_AGENT_COLLECTOR_BACKEND_SERVICES=127.0.0.1:11800</span><br></pre></td></tr></table></figure><p><a href="https://imgtu.com/i/7ecFNF"><img src="https://s4.ax1x.com/2022/01/11/7ecFNF.md.png" alt="7ecFNF.md.png"></a></p><p>然后解压打开<strong>SkyWalking APM</strong>的下载包，解压后进入文件夹下的bin目录，windows就执行startup.bat，linux就执行startup.sh。</p><p>最后启动各个微服务，在项目启动时当打印出来以下类似的日志时，则代表SkyWalking启动成功。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">main AgentPackagePath : The beacon class location is jar:file:/D:/tools/skywalking-agent/skywalking-agent.jar!/org/apache/skywalking/apm/agent/core/boot/AgentPackagePath.class.</span><br><span class="line">main SnifferConfigInitializer : Config file found in D:\tools\skywalking-agent\config\agent.config.</span><br></pre></td></tr></table></figure><h4 id="3-查看启动效果"><a href="#3-查看启动效果" class="headerlink" title="3.查看启动效果"></a>3.查看启动效果</h4><p>SkyWalking中发现服务速度有些慢，稍等片刻后访问<strong>SkyWalking APM</strong>所在网络下的localhost:8080即可，页面效果如下图。</p><p><a href="https://imgtu.com/i/7eRjaV"><img src="https://s4.ax1x.com/2022/01/11/7eRjaV.md.png" alt="7eRjaV.md.png"></a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 微服务 </tag>
+            
+            <tag> 监控 </tag>
+            
+            <tag> SkyWalking </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Netty应用以及源码（一）</title>
       <link href="/2021/01/02/1/"/>
       <url>/2021/01/02/1/</url>
@@ -79,9 +102,9 @@
       
         <tags>
             
-            <tag> Netty </tag>
-            
             <tag> 后端 </tag>
+            
+            <tag> Netty </tag>
             
             <tag> 源码 </tag>
             
@@ -102,9 +125,9 @@
       
         <tags>
             
-            <tag> 后端 </tag>
-            
             <tag> MySQL </tag>
+            
+            <tag> 后端 </tag>
             
         </tags>
       
