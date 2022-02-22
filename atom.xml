@@ -4,7 +4,7 @@
   <icon>http://example.com/icon.png</icon>
   
   <link href="http://example.com/atom.xml" rel="self"/>
-  
+  <link href="www.kexi.link" rel="hub"/>
   <link href="http://example.com/"/>
   <updated>2022-01-18T06:59:33.163Z</updated>
   <id>http://example.com/</id>
