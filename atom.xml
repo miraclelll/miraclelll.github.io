@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Miracle-</title>
+  <icon>http://example.com/icon.png</icon>
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-01-18T06:59:33.163Z</updated>
+  <id>http://example.com/</id>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>zookeeper集成seata</title>
+    <link href="http://example.com/2022/01/02/1/"/>
+    <id>http://example.com/2022/01/02/1/</id>
+    <published>2022-01-02T02:27:13.000Z</published>
+    <updated>2022-01-18T06:59:33.163Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;因为不喜欢nacos，太大很臃肿很多功能没必要，所以使用注册中心和配置中心均为zookeeper，然后基于zookeeper搭建了一个后端微服务脚手架。犯蠢忘了不同服务用的是不同数据库，但是自己测试的时候偷懒只用了一个数据库，导致分布式事务始终不生</summary>
+        
+      
+    
+    
+    
+    
+    <category term="微服务" scheme="http://example.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="zookeeper" scheme="http://example.com/tags/zookeeper/"/>
+    
+    <category term="分布式事务" scheme="http://example.com/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/"/>
+    
+    <category term="seata" scheme="http://example.com/tags/seata/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编写Linux中frp自启动脚本</title>
+    <link href="http://example.com/2021/12/01/1/"/>
+    <id>http://example.com/2021/12/01/1/</id>
+    <published>2021-12-01T09:54:16.000Z</published>
+    <updated>2021-11-03T03:55:54.894Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;家里有台闲置树莓派和轻量云的服务器顺手折腾一下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;设置服务名&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+    <category term="运维" scheme="http://example.com/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人技能网-待补充掌握程度</title>
+    <link href="http://example.com/2021/10/01/1/"/>
+    <id>http://example.com/2021/10/01/1/</id>
+    <published>2021-10-01T03:14:44.000Z</published>
+    <updated>2022-01-07T02:25:59.116Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;知识和知识之间是有联系的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;精通（待完善）&quot;&gt;&lt;a href=&quot;#精通（待完善）&quot; class=&quot;headerlink&quot; title=&quot;精通（待完善）&quot;&gt;&lt;/a&gt;精通（待完善）&lt;/h4&gt;&lt;h4</summary>
+        
+      
+    
+    
+    
+    
+    <category term="总结" scheme="http://example.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微服务链路追踪SkyWalking</title>
+    <link href="http://example.com/2021/05/02/1/"/>
+    <id>http://example.com/2021/05/02/1/</id>
+    <published>2021-05-02T07:38:32.000Z</published>
+    <updated>2022-01-11T08:24:59.376Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;SkyWalking超级简单的微服务链路追踪框架&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-下载安装包&quot;&gt;&lt;a href=&quot;#1-下载安装包&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="微服务" scheme="http://example.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="监控" scheme="http://example.com/tags/%E7%9B%91%E6%8E%A7/"/>
+    
+    <category term="SkyWalking" scheme="http://example.com/tags/SkyWalking/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Netty应用以及源码（一）</title>
+    <link href="http://example.com/2021/01/02/1/"/>
+    <id>http://example.com/2021/01/02/1/</id>
+    <published>2021-01-02T06:13:46.000Z</published>
+    <updated>2021-11-01T09:29:33.286Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Netty是基于事件处理的高性能异步非阻塞网络框架，Zookeeper、Dubbo、RocketMQ底层都有Netty的影子，是网络编程的基石，需要熟练掌握&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;NIO&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="后端" scheme="http://example.com/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="Netty" scheme="http://example.com/tags/Netty/"/>
+    
+    <category term="源码" scheme="http://example.com/tags/%E6%BA%90%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL数据库原理剖析和优化</title>
+    <link href="http://example.com/2020/05/02/1/"/>
+    <id>http://example.com/2020/05/02/1/</id>
+    <published>2020-05-02T02:14:55.000Z</published>
+    <updated>2021-12-29T01:26:35.251Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;数据库是Web开发中必不可少的一环，需要加强基础知识的学习和总结项目中出现的问题。难点主要在索引和分布式事务上，由于本人项目过程中使用的数据库多为MySQL和MariaDB，所以以下内容所使用的数据库环境均为MySQL&lt;/p&gt;
+&lt;/blockquo</summary>
+        
+      
+    
+    
+    
+    
+    <category term="MySQL" scheme="http://example.com/tags/MySQL/"/>
+    
+    <category term="后端" scheme="http://example.com/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+  </entry>
+  
+</feed>
