@@ -148,9 +148,9 @@
     
     
     
-    <category term="后端" scheme="http://example.com/tags/%E5%90%8E%E7%AB%AF/"/>
-    
     <category term="Netty" scheme="http://example.com/tags/Netty/"/>
+    
+    <category term="后端" scheme="http://example.com/tags/%E5%90%8E%E7%AB%AF/"/>
     
     <category term="源码" scheme="http://example.com/tags/%E6%BA%90%E7%A0%81/"/>
     
@@ -177,9 +177,9 @@
     
     
     
-    <category term="MySQL" scheme="http://example.com/tags/MySQL/"/>
-    
     <category term="后端" scheme="http://example.com/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="MySQL" scheme="http://example.com/tags/MySQL/"/>
     
   </entry>
   
