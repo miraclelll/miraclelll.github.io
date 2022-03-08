@@ -143,14 +143,14 @@ MathJax = {
                 <i class="iconfont icon-tags" title="标签"></i>
                 
                 <span class="span--tag">
-                  <a href="/tags/%E5%90%8E%E7%AB%AF/" title="后端">
-                    <b>#</b> 后端
+                  <a href="/tags/MySQL/" title="MySQL">
+                    <b>#</b> MySQL
                   </a>
                 </span>
                 
                 <span class="span--tag">
-                  <a href="/tags/MySQL/" title="MySQL">
-                    <b>#</b> MySQL
+                  <a href="/tags/%E5%90%8E%E7%AB%AF/" title="后端">
+                    <b>#</b> 后端
                   </a>
                 </span>
                 
@@ -204,7 +204,7 @@ MathJax = {
 <p>join原理：<br>最基础的索引，等于双重for循环，将两张表的内存进行循环然后查询结果集。<br>当join中的on条件为索引时，会将最外层表的数据查询出来后使用索引去查内层表，顶多只需要三次IO查询索引树即可查到结果；<br>当join中的on条件不为索引时，会让任意一张表作为驱动表，然后将结果集存入join buffer，然后使用join buffer中的内容扫描另一张表；</p>
 <p>join优化：<br>减少join中的条件数据，减少多次连接，按照机器性能新增join buffer大小；</p>
 <h4 id="数据库存储优化"><a href="#数据库存储优化" class="headerlink" title="数据库存储优化"></a>数据库存储优化</h4><p>能用小字段尽量用小字段，varchar是变长的，随着字段存储内容的变多会变长。禁止在数据库内存储文件，如果有需要存储文件的业务时，需要把文件放入文件服务器中供系统访问和下载。</p>
-<h2 id="数据库锁和分布式事务"><a href="#数据库锁和分布式事务" class="headerlink" title="数据库锁和分布式事务"></a>数据库锁和分布式事务</h2><h4 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h4><p>数据库锁一般是读写锁，读锁后只能加读锁，不能加写锁。加了写锁后其他任何读锁、写锁都无法加入；</p>
+<h2 id="数据库锁和分布式事务"><a href="#数据库锁和分布式事务" class="headerlink" title="数据库锁和分布式事务"></a>数据库锁和分布式事务</h2><h4 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h4><p>数据库锁一般是读写锁，读锁后只能加读锁，不能加写锁。加了写锁后其他任何读锁、写锁都无法加入，使用了MVCC机制进行了优化；</p>
 <p>InnoDB：有行锁和表锁，有索引则触发行锁，没有则是表锁；<br>MyISAM：只有表锁；</p>
 <h4 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h4><p>事物的四大特征ACID，在InnoDB中：</p>
 <blockquote>
@@ -221,7 +221,7 @@ MathJax = {
 <li>幻读：第一次只查询到一条数据但是第二次查询查到了另一个事务提交的数据；</li>
 <li>串行化：事务之间互斥，只有第一个事务提交后后续事务才能依次执行。</li>
 </ul>
-<p>MVCC：mysql innodb存储引擎默认隔离级别是可重复读，mysql实现可重复读使用的是mvcc机制(多版本并发控制)。</p>
+<p>MVCC：mysql innodb存储引擎默认隔离级别是可重复读，mysql实现可重复读使用的是mvcc机制(多版本并发控制)。就是在读的时候都加上版本号，只有当其他事务提交后，才更新最新的版本号，实现原理是使用undo log。</p>
 <p>分布式事务</p>
 <ol>
 <li><p>CAP定理：</p>
@@ -294,14 +294,14 @@ MathJax = {
                     <i class="iconfont icon-tags" title="标签"></i>
                     
                     <span class="span--tag">
-                      <a href="/tags/%E5%90%8E%E7%AB%AF/" title="后端">
-                        <b>#</b> 后端
+                      <a href="/tags/MySQL/" title="MySQL">
+                        <b>#</b> MySQL
                       </a>
                     </span>
                     
                     <span class="span--tag">
-                      <a href="/tags/MySQL/" title="MySQL">
-                        <b>#</b> MySQL
+                      <a href="/tags/%E5%90%8E%E7%AB%AF/" title="后端">
+                        <b>#</b> 后端
                       </a>
                     </span>
                     
