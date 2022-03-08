@@ -6,10 +6,42 @@
   <link href="http://www.kexi.link/atom.xml" rel="self"/>
   <link href="www.kexi.link" rel="hub"/>
   <link href="http://www.kexi.link/"/>
-  <updated>2022-01-18T06:59:33.163Z</updated>
+  <updated>2022-03-08T09:44:24.383Z</updated>
   <id>http://www.kexi.link/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DDD领域驱动设计</title>
+    <link href="http://www.kexi.link/2022/03/05/1/"/>
+    <id>http://www.kexi.link/2022/03/05/1/</id>
+    <published>2022-03-05T03:54:01.000Z</published>
+    <updated>2022-03-08T09:44:24.383Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;领域驱动设计理念，以业务主体为代码设计的骨架，通过业务中的限界上下文划分子域，完美的契合微服务的服务拆分理念，将微服务的服务拆分提供业务依据&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-主要流程&quot;&gt;&lt;a href=&quot;#1-主要流程&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="架构" scheme="http://www.kexi.link/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+    <category term="微服务" scheme="http://www.kexi.link/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="DDD" scheme="http://www.kexi.link/tags/DDD/"/>
+    
+    <category term="领域驱动设计" scheme="http://www.kexi.link/tags/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>zookeeper集成seata</title>

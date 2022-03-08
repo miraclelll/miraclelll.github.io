@@ -13,6 +13,11 @@
   
   <title>
     
+      DDD领域驱动设计
+      
+      
+      |
+    
      Miracle-
   </title>
 
@@ -99,108 +104,185 @@
 
 
       <div class="flex-container">
-        <div class="container index">
-  <div class="post-list">
-    <!-- 遍历渲染文章 -->
-    
-      <div class="post-item" title="DDD领域驱动设计">
-        <div class="time-m-d">2022-03-05</div>
-        <div class="title">
-          <a href="/2022/03/05/1/">
-            
-              
-                <span>DDD领域驱动设计</span>
-              
-            
-          </a>
-        </div>
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">DDD领域驱动设计</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="更新时间"></i>
+          2022-03-05 11:54:01
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="标签"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/%E6%9E%B6%E6%9E%84/" title="架构">
+                    <b>#</b> 架构
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="微服务">
+                    <b>#</b> 微服务
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/DDD/" title="DDD">
+                    <b>#</b> DDD
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/" title="领域驱动设计">
+                    <b>#</b> 领域驱动设计
+                  </a>
+                </span>
+                
+              </span>
+          
       </div>
-    
-      <div class="post-item" title="zookeeper集成seata">
-        <div class="time-m-d">2022-01-02</div>
-        <div class="title">
-          <a href="/2022/01/02/1/">
-            
-              
-                <span>zookeeper集成seata</span>
-              
-            
-          </a>
-        </div>
+      <div class="markdown-body">
+        <blockquote>
+<p>领域驱动设计理念，以业务主体为代码设计的骨架，通过业务中的限界上下文划分子域，完美的契合微服务的服务拆分理念，将微服务的服务拆分提供业务依据</p>
+</blockquote>
+<h4 id="1-主要流程"><a href="#1-主要流程" class="headerlink" title="1. 主要流程"></a>1. 主要流程</h4><p>领域驱动设计主要分为战略设计和战术设计，战略设计由领域专家组织产品、开发、销售等关键人员进行事件风暴会议，然后梳理出来重点的事件流，依据事件流绘制出领域图，定义通用语言，通过领域图定义限界上下文来划分核心子域、支持子域和通用子域，划分完成后进行战术设计，定义好实体、值对象、聚合、聚合根、领域服务、应用服务、领域事件、仓储、工厂等关键模型。</p>
+<h4 id="2-战略设计"><a href="#2-战略设计" class="headerlink" title="2. 战略设计"></a>2. 战略设计</h4><h5 id="2-1-事件风暴会议"><a href="#2-1-事件风暴会议" class="headerlink" title="2.1 事件风暴会议"></a>2.1 事件风暴会议</h5><p>由当前业务相关的领域专家发起或主持，产品、开发、销售人员都参加，围绕业务关键要点绘制事件流</p>
+<h5 id="2-2-事件流"><a href="#2-2-事件流" class="headerlink" title="2.2 事件流"></a>2.2 事件流</h5><p>事件流分为读模型、操作者、决策命令、外部系统、聚合、事件、策略等模块组成，加上部分描述信息组成完成的事件流，将所有的查询操作放入读模型有利于后续的CQRS中查询、命令的落地。</p>
+<p>事件流的绘制是需要非常规范的一套流程，需要领域专家传递出来业务要点然后大家进行补充，需要所有人都参与到讨论当中。后续会详细出一篇博客介绍事件流绘制流程和要点。</p>
+<h5 id="2-3-限界上下文和子域"><a href="#2-3-限界上下文和子域" class="headerlink" title="2.3 限界上下文和子域"></a>2.3 限界上下文和子域</h5><p>通过限界上下文将事件流划分为不同子域，以是否为核心业务来判断子域的类型，核心子域为该领域的最核心业务，例如商城领域中的支付、商品子域都是核心子域，支持子域则是辅助核心子域的例如促销子域、客服子域等，通用子域则是第三方接口划分出来的子域，例如短信子域、第三方物流平台、第三方支付平台。</p>
+<h4 id="3-战术设计"><a href="#3-战术设计" class="headerlink" title="3. 战术设计"></a>3. 战术设计</h4><p>未完待续…</p>
+
       </div>
-    
-      <div class="post-item" title="编写Linux中frp自启动脚本">
-        <div class="time-m-d">2021-12-01</div>
-        <div class="title">
-          <a href="/2021/12/01/1/">
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
             
-              
-                <span>编写Linux中frp自启动脚本</span>
-              
+              <a href="/2022/01/02/1/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
             
-          </a>
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="更新时间"></i>
+              2022-03-05 11:54:01
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="标签"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/%E6%9E%B6%E6%9E%84/" title="架构">
+                        <b>#</b> 架构
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="微服务">
+                        <b>#</b> 微服务
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/DDD/" title="DDD">
+                        <b>#</b> DDD
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/" title="领域驱动设计">
+                        <b>#</b> 领域驱动设计
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
         </div>
-      </div>
+      
+    </div>
     
-      <div class="post-item" title="个人技能网-待补充掌握程度">
-        <div class="time-m-d">2021-10-01</div>
-        <div class="title">
-          <a href="/2021/10/01/1/">
-            
-              
-                <span>个人技能网-待补充掌握程度</span>
-              
-            
-          </a>
-        </div>
-      </div>
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B"><span class="toc-text">1. 主要流程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1"><span class="toc-text">2. 战略设计</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-%E4%BA%8B%E4%BB%B6%E9%A3%8E%E6%9A%B4%E4%BC%9A%E8%AE%AE"><span class="toc-text">2.1 事件风暴会议</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-%E4%BA%8B%E4%BB%B6%E6%B5%81"><span class="toc-text">2.2 事件流</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-3-%E9%99%90%E7%95%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E5%92%8C%E5%AD%90%E5%9F%9F"><span class="toc-text">2.3 限界上下文和子域</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E6%88%98%E6%9C%AF%E8%AE%BE%E8%AE%A1"><span class="toc-text">3. 战术设计</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
     
-      <div class="post-item" title="微服务链路追踪SkyWalking">
-        <div class="time-m-d">2021-05-02</div>
-        <div class="title">
-          <a href="/2021/05/02/1/">
-            
-              
-                <span>微服务链路追踪SkyWalking</span>
-              
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="Netty应用以及源码（一）">
-        <div class="time-m-d">2021-01-02</div>
-        <div class="title">
-          <a href="/2021/01/02/1/">
-            
-              
-                <span>Netty应用以及源码（一）</span>
-              
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="MySQL数据库原理剖析和优化">
-        <div class="time-m-d">2020-05-02</div>
-        <div class="title">
-          <a href="/2020/05/02/1/">
-            
-              
-                <span>MySQL数据库原理剖析和优化</span>
-              
-            
-          </a>
-        </div>
+      <div class="comments-container">
+        
+
+
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+  <div id="vcomments"></div>
+
+  <script>
+    new Valine({
+      el: '#vcomments',
+      appId: 'LRDflYBpDYwHcKLrQNEsQwoj-gzGzoHsz',
+      appKey: 'zmuYPyF7MrRwF3Rv69GDLkV7',
+      placeholder: 'Welcome!',
+      avatar: 'retro',
+      lang: 'zh-CN'
+    })
+  </script>
+
+    <style>
+      .comments-container .v .vempty {
+        display: none!important;
+      }
+    </style>
+
+
+
+
       </div>
     
   </div>
-  <nav class="post-navigation">
-    
-    <span class="page-num">1 / 1</span>
-    
-  </nav>
-</div>
+
 
         <div class="footer">
   <div class="social">
@@ -463,6 +545,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + DDD%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1 + '&url=' + http%3A%2F%2Fwww.kexi.link%2F2022%2F03%2F05%2F1%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://www.kexi.link/2022/03/05/1/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
