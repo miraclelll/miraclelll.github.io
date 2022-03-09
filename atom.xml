@@ -33,9 +33,9 @@
     
     
     
-    <category term="架构" scheme="http://www.kexi.link/tags/%E6%9E%B6%E6%9E%84/"/>
-    
     <category term="微服务" scheme="http://www.kexi.link/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="架构" scheme="http://www.kexi.link/tags/%E6%9E%B6%E6%9E%84/"/>
     
     <category term="DDD" scheme="http://www.kexi.link/tags/DDD/"/>
     
@@ -163,7 +163,7 @@
     <link href="http://www.kexi.link/2021/01/02/1/"/>
     <id>http://www.kexi.link/2021/01/02/1/</id>
     <published>2021-01-02T06:13:46.000Z</published>
-    <updated>2021-11-01T09:29:33.286Z</updated>
+    <updated>2022-03-09T08:57:15.016Z</updated>
     
     
       
@@ -171,18 +171,16 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Netty是基于事件处理的高性能异步非阻塞网络框架，Zookeeper、Dubbo、RocketMQ底层都有Netty的影子，是网络编程的基石，需要熟练掌握&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;NIO&quot;&gt;&lt;a</summary>
+&lt;p&gt;Netty是基于事件处理的高性能异步非阻塞网络框架，Zookeeper、Dubbo、RocketMQ底层都有Netty的影子，是网络编程的基石，需要熟练掌握，本章会介绍NIO相关知识和Netty</summary>
         
       
     
     
     
     
-    <category term="后端" scheme="http://www.kexi.link/tags/%E5%90%8E%E7%AB%AF/"/>
-    
     <category term="Netty" scheme="http://www.kexi.link/tags/Netty/"/>
+    
+    <category term="后端" scheme="http://www.kexi.link/tags/%E5%90%8E%E7%AB%AF/"/>
     
     <category term="源码" scheme="http://www.kexi.link/tags/%E6%BA%90%E7%A0%81/"/>
     
@@ -209,9 +207,9 @@
     
     
     
-    <category term="MySQL" scheme="http://www.kexi.link/tags/MySQL/"/>
-    
     <category term="后端" scheme="http://www.kexi.link/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="MySQL" scheme="http://www.kexi.link/tags/MySQL/"/>
     
   </entry>
   
