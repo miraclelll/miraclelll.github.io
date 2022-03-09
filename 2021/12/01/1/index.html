@@ -161,7 +161,7 @@ MathJax = {
         <blockquote>
 <p>家里有台闲置树莓派和轻量云的服务器顺手折腾一下</p>
 </blockquote>
-<p>设置服务名</p>
+<h2 id="1-启动服务"><a href="#1-启动服务" class="headerlink" title="1. 启动服务"></a>1. 启动服务</h2><p>设置服务名</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /lib/systemd/system/frps.service</span><br></pre></td></tr></table></figure>
 
 <p>写入下列代码</p>
@@ -176,7 +176,7 @@ MathJax = {
 <p>重启服务</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart frps</span><br></pre></td></tr></table></figure>
 
-<p>生成的软连接所在位置，一般在需要删除该自启动脚本时同时删除</p>
+<h2 id="2-删除服务"><a href="#2-删除服务" class="headerlink" title="2. 删除服务"></a>2. 删除服务</h2><p>生成的软连接所在位置，一般在需要删除该自启动脚本时同时删除</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/etc/systemd/system/multi-user.target.wants/frps.service</span><br><span class="line"></span><br><span class="line">/usr/lib/systemd/system/frps.service</span><br></pre></td></tr></table></figure>
 
 <p>frp部署文档参考 👉 <a target="_blank" rel="noopener" href="https://gofrp.org/docs/setup/">《安装frp》</a>- frp官方文档</p>
@@ -228,6 +228,21 @@ MathJax = {
       
     </div>
     
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1"><span class="toc-text">1. 启动服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%88%A0%E9%99%A4%E6%9C%8D%E5%8A%A1"><span class="toc-text">2. 删除服务</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
 
     
       <div class="comments-container">

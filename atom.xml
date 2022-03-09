@@ -33,9 +33,9 @@
     
     
     
-    <category term="微服务" scheme="http://www.kexi.link/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
-    
     <category term="架构" scheme="http://www.kexi.link/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+    <category term="微服务" scheme="http://www.kexi.link/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     <category term="DDD" scheme="http://www.kexi.link/tags/DDD/"/>
     
@@ -78,7 +78,7 @@
     <link href="http://www.kexi.link/2021/12/01/1/"/>
     <id>http://www.kexi.link/2021/12/01/1/</id>
     <published>2021-12-01T09:54:16.000Z</published>
-    <updated>2021-11-03T03:55:54.894Z</updated>
+    <updated>2022-03-09T09:02:38.038Z</updated>
     
     
       
@@ -88,8 +88,7 @@
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;家里有台闲置树莓派和轻量云的服务器顺手折腾一下&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;设置服务名&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+&lt;h2 id=&quot;1-启动服务&quot;&gt;&lt;a href=&quot;#1-启动服务&quot; class=&quot;headerlink&quot; title=&quot;1. 启动服务&quot;&gt;&lt;/a&gt;1.</summary>
         
       
     
@@ -163,7 +162,7 @@
     <link href="http://www.kexi.link/2021/01/02/1/"/>
     <id>http://www.kexi.link/2021/01/02/1/</id>
     <published>2021-01-02T06:13:46.000Z</published>
-    <updated>2022-03-09T08:57:15.016Z</updated>
+    <updated>2022-03-09T08:59:25.865Z</updated>
     
     
       
@@ -178,9 +177,9 @@
     
     
     
-    <category term="Netty" scheme="http://www.kexi.link/tags/Netty/"/>
-    
     <category term="后端" scheme="http://www.kexi.link/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="Netty" scheme="http://www.kexi.link/tags/Netty/"/>
     
     <category term="源码" scheme="http://www.kexi.link/tags/%E6%BA%90%E7%A0%81/"/>
     
@@ -191,7 +190,7 @@
     <link href="http://www.kexi.link/2020/05/02/1/"/>
     <id>http://www.kexi.link/2020/05/02/1/</id>
     <published>2020-05-02T02:14:55.000Z</published>
-    <updated>2022-03-08T03:49:59.964Z</updated>
+    <updated>2022-03-09T09:01:33.828Z</updated>
     
     
       
@@ -207,9 +206,9 @@
     
     
     
-    <category term="后端" scheme="http://www.kexi.link/tags/%E5%90%8E%E7%AB%AF/"/>
-    
     <category term="MySQL" scheme="http://www.kexi.link/tags/MySQL/"/>
+    
+    <category term="后端" scheme="http://www.kexi.link/tags/%E5%90%8E%E7%AB%AF/"/>
     
   </entry>
   
