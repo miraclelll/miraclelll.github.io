@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.kexi.link/2021/09/04/cl1x9k9530003w4w2ecjxeu7o/</loc>
+    <loc>https://www.kexi.link/2021/09/04/cl1x9mosp0005e4w26dam6p53/</loc>
     
     <lastmod>2022-04-13</lastmod>
     
@@ -129,13 +129,6 @@
   </url>
   
   <url>
-    <loc>https://www.kexi.link/tags/galgame/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.kexi.link/tags/Netty/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -157,28 +150,14 @@
   </url>
   
   <url>
+    <loc>https://www.kexi.link/tags/galgame/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.kexi.link/tags/MySQL/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.kexi.link/tags/%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.kexi.link/tags/%E7%9B%91%E6%8E%A7/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.kexi.link/tags/SkyWalking/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -200,6 +179,27 @@
   
   <url>
     <loc>https://www.kexi.link/tags/seata/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kexi.link/tags/%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kexi.link/tags/%E7%9B%91%E6%8E%A7/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kexi.link/tags/SkyWalking/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
