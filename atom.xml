@@ -33,9 +33,9 @@
     
     
     
-    <category term="架构" scheme="https://www.kexi.link/tags/%E6%9E%B6%E6%9E%84/"/>
-    
     <category term="微服务" scheme="https://www.kexi.link/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="架构" scheme="https://www.kexi.link/tags/%E6%9E%B6%E6%9E%84/"/>
     
     <category term="DDD" scheme="https://www.kexi.link/tags/DDD/"/>
     
@@ -132,7 +132,7 @@
     <link href="https://www.kexi.link/2021/09/04/1/"/>
     <id>https://www.kexi.link/2021/09/04/1/</id>
     <published>2021-09-04T02:42:38.000Z</published>
-    <updated>2022-04-13T08:50:32.579Z</updated>
+    <updated>2022-04-13T08:53:21.491Z</updated>
     
     
     <summary type="html">有东西被加密了, 请输入密码查看。</summary>
