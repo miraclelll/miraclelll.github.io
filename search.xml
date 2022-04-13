@@ -98,13 +98,15 @@
       <link href="/2021/09/04/1/"/>
       <url>/2021/09/04/1/</url>
       
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试。" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="a32a11fb7d19ec691ad9e2cac51e8efe836ea6c21cfda2e4e5adb1cce4e65a45">57e3e5b92af35a85847f4f612049df7249cdbcfdbdb18ca2e882fc525fb20760bab95ff2a1e631452aeed73dcf8ab1c5</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-blink">      <input class="hbe hbe-input-field hbe-input-field-blink" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-blink" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-blink" data-content="这里需要密码。">这里需要密码。</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试。" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="f71b9590cc8c0ecae111fdee18f71a80d8ba09537267dc3c044b9f24dedb139f">57e3e5b92af35a85847f4f612049df72ba6fecd7294c5448ee798137a63b91aa</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">这里需要密码。</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       
       
       
         <tags>
             
             <tag> galgame </tag>
+            
+            <tag> 日常 </tag>
             
         </tags>
       
