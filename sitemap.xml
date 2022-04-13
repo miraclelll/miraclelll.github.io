@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.kexi.link/2021/09/04/cl1x9mosp0005e4w26dam6p53/</loc>
+    <loc>https://www.kexi.link/2021/09/04/1/</loc>
     
     <lastmod>2022-04-13</lastmod>
     
@@ -129,7 +129,14 @@
   </url>
   
   <url>
-    <loc>https://www.kexi.link/tags/Netty/</loc>
+    <loc>https://www.kexi.link/tags/galgame/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kexi.link/tags/MySQL/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -143,21 +150,14 @@
   </url>
   
   <url>
+    <loc>https://www.kexi.link/tags/Netty/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.kexi.link/tags/%E6%BA%90%E7%A0%81/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.kexi.link/tags/galgame/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.kexi.link/tags/MySQL/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
