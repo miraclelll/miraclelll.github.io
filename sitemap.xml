@@ -129,7 +129,7 @@
   </url>
   
   <url>
-    <loc>https://www.kexi.link/tags/MySQL/</loc>
+    <loc>https://www.kexi.link/tags/Netty/</loc>
     <lastmod>2022-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -137,6 +137,20 @@
   
   <url>
     <loc>https://www.kexi.link/tags/%E5%90%8E%E7%AB%AF/</loc>
+    <lastmod>2022-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kexi.link/tags/%E6%BA%90%E7%A0%81/</loc>
+    <lastmod>2022-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kexi.link/tags/MySQL/</loc>
     <lastmod>2022-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -151,20 +165,6 @@
   
   <url>
     <loc>https://www.kexi.link/tags/%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2022-04-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.kexi.link/tags/Netty/</loc>
-    <lastmod>2022-04-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.kexi.link/tags/%E6%BA%90%E7%A0%81/</loc>
     <lastmod>2022-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
